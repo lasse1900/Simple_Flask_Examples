@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Write Header and Variables to CSV</title>
+</head>
+<body>
+    <h1>Enter Header and Variables</h1>
+    <form action="/" method="POST">
+        <label for="header">Header:</label>
+        <input type="text" id="header" name="header" placeholder="Header 1,Header 2,Header 3" required>
+        <label for="variable1">Variable 1:</label>
+        <input type="text" id="variable1" name="variable1" placeholder="Variable 1,Variable 2,Variable 3" required>
+        <label for="variable2">Variable 2:</label>
+        <input type="text" id="variable2" name="variable2" placeholder="Variable 1,Variable 2,Variable 3" required>
+        <label for="variable3">Variable 3:</label>
+        <input type="text" id="variable3" name="variable3" placeholder="Variable 1,Variable 2,Variable 3" required>
+        <label for="variable4">Variable 4:</label>
+        <input type="text" id="variable4" name="variable4" placeholder="Variable 1,Variable 2,Variable 3" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>

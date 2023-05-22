@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Variables from CSV</title>
+</head>
+<body>
+    <h1>Variables from CSV</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Variable 1</th>
+                <th>Variable 2</th>
+                <!-- Add more column headers if needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for variable in variables %}
+                <tr>
+                    <td>{{ variable[0] }}</td>
+                    <td>{{ variable[1] }}</td>
+                    <!-- Add more columns based on the CSV file structure -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

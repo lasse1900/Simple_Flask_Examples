@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Write Variables to CSV</title>
+</head>
+<body>
+    <h1>Enter Variables</h1>
+    <form action="/" method="POST">
+        <input type="text" name="variable" placeholder="keyword" required>
+        <input type="text" name="variable" placeholder="location" required>
+        <br>
+        <input type="text" name="variable" placeholder="Variable 1" required>
+        <input type="text" name="variable" placeholder="Variable 2" required>
+        <!-- Add more input fields for additional variables -->
+        <button type="submit">Submit</button>
+    </form>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>
+

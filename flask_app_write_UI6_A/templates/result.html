@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV File Created</title>
+</head>
+<body>
+    <body style="background-color:rgb(189, 216, 232)"></body>
+    <h1>CSV File Created</h1>
+    <p>The CSV file '{{ filename }}' has been created successfully.</p>
+    
+    <button onclick="goBack()">Back</button>
+
+    <!-- Button to navigate to separate HTML file with anchor -->
+    <button onclick="goToAnchor()">Go to Anchor</button>
+    
+    <!-- Rest of your HTML content -->
+    <!-- ... -->
+    
+    <script>
+        function goToAnchor() {
+            window.location.href = '#return-anchor';
+        }
+    </script>
+
+</body>
+</html>

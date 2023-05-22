@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Operation Completed</h1>
+    
+    {% if filename %}
+        <p>The CSV file '{{ filename }}' has been created successfully.</p>
+    {% endif %}
+</body>
+</html>

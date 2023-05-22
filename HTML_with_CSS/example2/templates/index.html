@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Write to CSV</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 style="color:rgb(0, 64, 255);font-size:26px;">Write to CSV</h1>
+    <form action="/write_csv1" method="POST">
+        <h2 style="color: rgb(0, 64, 255)">CSV File 1</h2>
+        <label for="variables1">Variables:</label>
+        <input type="text" id="variables1" name="variables" placeholder="Variable 1,Variable 2,Variable 3">
+        <button type="submit">Write to CSV</button>
+    </form>
+    
+    <form action="/write_csv2" method="POST">
+        <h2 style="color: rgb(0, 64, 255)">CSV File 2</h2>
+        <label for="variables2">Variables:</label>
+        <input type="text" id="variables2" name="variables" placeholder="Variable 1,Variable 2,Variable 3">
+        <button type="submit">Write to CSV</button>
+    </form>
+    
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+</body>
+</html>

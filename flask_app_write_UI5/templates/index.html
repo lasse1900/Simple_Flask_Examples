@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Write to CSV and Start Program</title>
+</head>
+<body>
+    <h1>Enter Variables</h1>
+    <form action="/write_csv" method="POST">
+        <label for="variables">Variables:</label>
+        <input type="text" id="variables" name="variables" placeholder="Variable 1,Variable 2,Variable 3">
+        <button type="submit">Write to CSV</button>
+    </form>
+    <form action="/start_program" method="POST">
+        <button type="submit">Start Python Method/Program</button>
+    </form>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>
